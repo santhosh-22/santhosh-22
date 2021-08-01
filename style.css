@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Nav bar*/
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: cadetblue;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,1);
+}
+
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+nav .logo p{
+    float: left;
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 32px;
+}
+
+nav ul li a:hover{
+    color:gainsboro;
+    background-color: black; 
+    border-radius: 3%;
+}
+
+
+section{
+    background-color: black;
+}
+
+/*Home*/
+
+#Home {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('https://getdigitalexperts.com/wp-content/uploads/2017/02/computer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#Home h1{
+    
+    font-family: 'Gothic A1', sans-serif;
+    color:gainsboro;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 48%;
+    left: 40%;
+}
+
+.Name{
+    font-family: 'Gothic A1', serif;
+    font-weight: lighter;
+    
+}
+
+.Name_color{
+    color: cadetblue;
+}
+
+.My_img_1{
+    position: absolute;
+    top: 44.5%;
+    left: 27%;
+    border: 7px solid black;
+}
+
+.contacts ul{
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    display: flex;
+}
+
+.contacts ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.contacts ul li .bi{
+     font-size: 25px;
+     line-height: 40px;
+     transition: .6s;
+     color: black;
+}
+
+.contacts ul li .bi:hover{
+    color: #7a7a7a;
+}
+
+.contacts ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.8);
+}
+
+.contacts ul li a:hover{
+    transform: translate(0,-10px);
+}
+
+/*About me*/
+
+#About_me{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('https://www.innovwebsolutions.com/wp-content/themes/twentyseventeen/assets/images/mid3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#About_me h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: cadetblue;
+    text-transform: uppercase;
+    padding: 100px 100px;
+    font-weight: 600;
+}
+
+.My_img_2{
+    position: absolute;
+    border: 7px solid black;
+    left: 44.5%;
+    top: 127%;
+}
+
+blockquote{
+    font-family: 'Gothic A1', sans-serif;
+    color: gainsboro;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 160px 100px 0px 100px;
+
+}
+
+#About_me h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    text-align: right;
+    color: cadetblue;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+/*Projects*/
+
+#Projects{
+    width: 100%;
+    min-height: 100vh;  
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('https://cutecdn.codingdojo.com/new_design_image/global/parallax/onsite_bootcamp_splash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Cards{
+    display: grid;
+    width: 75%;
+    margin-left: 12.5%;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 80px;
+    text-align: center;
+}
+
+ article img{
+     margin-top: 20px;
+     padding: 0 0 20px 0;
+     width: 92%;
+ }
+
+ article{
+     transition: .5s ease;
+     cursor: pointer;
+ }
+
+ .Cards>article{
+     
+     background-color: black;
+     border-radius: 10px; 
+ }
+
+#Projects h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: cadetblue;
+    text-transform: uppercase;
+    padding: 100px 50px 30px 50px;
+    font-weight: 600;
+}
+
+article h2{
+    
+    color: #7a7a7a;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-align: center;
+}
+
+article h4{
+    color: cadetblue;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px 0px;
+
+}
+
+article p{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 15px;
+    color: #c9c9c9;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: initial;
+    padding: 20px 30px 20px 30px;
+    background-color: darkslategrey;
+    border-radius: 10px;
+}
+
+article i{
+    color: cadetblue;
+}
+
+article:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+}
+
+/*Skills*/
+
+#Skills{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('https://img.wallpapersafari.com/desktop/1280/1024/21/14/WyESYh.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#Skills h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: cadetblue;
+    text-transform: uppercase;
+    padding: 100px 50px 30px 50px;
+    font-weight: 600;
+}
+#Skills img{
+    border-radius: 10px;
+}
+
+#Skills h3{
+    color: #c9c9c9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Skills_box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Skills_title{
+    padding: 20px 0 20px 0;
+}
+
+.Skills_box img:hover{
+    transform: scale(1.05);
+}
