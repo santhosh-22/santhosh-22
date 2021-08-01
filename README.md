@@ -1,4 +1,4 @@
-### Hi there 👋 I am Santhosh Kumar! 
+### Hi there 👋 
 ### This my Portfolio
 
 <!--
